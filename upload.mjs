@@ -2,7 +2,7 @@ import { NFTStorage } from "nft.storage";
 import { filesFromPath } from "files-from-path";
 import path from "path";
 import * as fs from "fs";
-require("dotenv").config();
+import "dotenv/config"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 
 const token = process.env.NFT_STORAGE_API;
 
