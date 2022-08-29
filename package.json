@@ -1,0 +1,20 @@
+{
+  "name": "random_nfts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.9.3",
+    "dotenv": "^16.0.1",
+    "files-from-path": "^0.2.6",
+    "nft.storage": "^7.0.0"
+  },
+  "scripts": {
+    "random": "node random_color.js",
+    "create_img": "node create_img.js",
+    "upload_img": "node upload.mjs output/img",
+    "create_metadata": "node create_metadata.js",
+    "upload_metadata": "node upload.mjs output/metadata",
+    "complete": "yarn run random && yarn run create_img && yarn run upload_img && yarn run create_metadata && yarn run upload_metadata"
+  }
+}
